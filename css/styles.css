@@ -1,0 +1,155 @@
+:root{--primary-background-color:#FFFFFF ;
+    --content-background-color: #2F303A;
+    --team-background-color:#F5F4FA;
+    --primary-text-color:#757575;
+    --logo-color:#2196F3;
+    --header-logo-color:#000000;
+    --title-text-color: #212121;
+    --acent-color:#2196F3;
+    --hero-headline-color:#ffffff;
+    --footer-contact:rgba(255, 255, 255, 0.6);
+    --content-background-color:#2F303A;
+}
+body{font-family: 'Roboto', sans-serif;
+ background:var(--primary-background-color);
+ color: var(--primary-text-color); }
+
+ /* header */
+.list{ list-style: none;}
+.header-content{background: var(--primary-background-color);}
+/* logo */
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color:var(--logo-color);}
+.header-studio{color:var(--header-logo-color);}
+/* menu nav */
+.header-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-text-color) ;} 
+.header-item:hover,
+.header-item:focus {color:var(--acent-color);}
+.header-items .current{color: var(--acent-color);} 
+
+/* header contacts */
+.header-contact{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);}
+.header-contact:hover,
+.header-contact:focus{color:var(--acent-color);}
+
+/* hero content */
+.hero-content{ background: var(--content-background-color);}
+.hero-headline{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-headline-color) ;}
+
+/* button */
+.button{cursor: pointer; border:0;}
+.hero-content .button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;}
+.button.primary {
+    background: var(--acent-color);
+    color: var(--hero-headline-color);}
+ .button.primary:focus,
+ .button.primary:hover{
+    color: var(--title-text-color);
+    background: var(--team-background-color);} 
+
+/* peculiarities */
+.peculiarities, .caption{visibility: hidden;}
+.section-items .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; 
+    letter-spacing: 0.03em;
+    color:var(--title-text-color);}
+.section-items .text{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;}
+
+/* work */
+.section-headline{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--title-text-color);}
+
+/* team */
+.team{background: var(--team-background-color);}
+.team .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);}
+    /* team & projects text */
+.team-items .text, .projects .text {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+/* footer */
+.page-footer{background: var(--content-background-color);}
+.footer-studio{color: var(--hero-headline-color);}
+
+.footer-contact.address{
+    color: var(--hero-headline-color);} 
+.footer-contact{
+    font-style: normal; 
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--footer-contact);}
+.footer-contact:hover,
+.footer-contact:focus {color: var(--acent-color);}
+
+/* portfolio */
+
+/* buttons */
+.items-buttons .button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;}
+.button.secondary {
+    background: var(--team-background-color);
+    color: var(--title-text-color);}
+.button.secondary:hover,
+.button.secondary:focus{
+    background: var(--acent-color);
+    color: var(--hero-headline-color);}
+
+/* projects */
+.projects .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);}
+
