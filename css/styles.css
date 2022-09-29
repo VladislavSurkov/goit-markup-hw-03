@@ -10,13 +10,35 @@
     --footer-contact:rgba(255, 255, 255, 0.6);
     --content-background-color:#2F303A;
 }
+html {
+    box-sizing: border-box;}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;}
+
 body{font-family: 'Roboto', sans-serif;
  background:var(--primary-background-color);
  color: var(--primary-text-color); }
-
+/* container */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
  /* header */
-.list{ list-style: none;}
-.header-content{background: var(--primary-background-color);}
+ 
+.list{ list-style: none;
+    padding: 0;
+    margin: 0;}
+.header-content{ background: var(--primary-background-color);
+    border-bottom: 1px solid #ECECEC;}
+.header-nav{
+    display: flex;
+    align-items: center;
+   margin:32px auto;}
 /* logo */
 .logo{
     font-family: 'Raleway';
@@ -28,46 +50,66 @@ body{font-family: 'Roboto', sans-serif;
     color:var(--logo-color);}
 .header-studio{color:var(--header-logo-color);}
 /* menu nav */
+.header-items{
+    display: flex;
+    margin-left: 93px;}
+.header-items .item:not(:last-child), .header-contacts .item:not(:last-child){margin-right: 50px;}
 .header-item{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 32px 0;
     color: var(--title-text-color) ;} 
 .header-item:hover,
 .header-item:focus {color:var(--acent-color);}
 .header-items .current{color: var(--acent-color);} 
 
 /* header contacts */
+.header-contacts{display: flex;
+    margin-left: auto;
+   }
 .header-contact{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 32px 0;
     color: var(--primary-text-color);}
 .header-contact:hover,
 .header-contact:focus{color:var(--acent-color);}
 
 /* hero content */
-.hero-content{ background: var(--content-background-color);}
+.hero-content{ background: var(--content-background-color);
+    padding-bottom: 200px;
+    margin: auto;
+    text-align: center;}
 .hero-headline{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: auto ;
+    padding: 200px 452px 30px 452px;
     color: var(--hero-headline-color) ;}
 
 /* button */
-.button{cursor: pointer; border:0;}
-.hero-content .button{
+.button{cursor: pointer; border:0; border-radius: 4px;}
+.hero-content .button{ 
+    display: inline-block;
+    min-width: 216px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+   
+    margin: auto;
+    padding: 10px 34px ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 .button.primary {
     background: var(--acent-color);
     color: var(--hero-headline-color);}
@@ -76,18 +118,28 @@ body{font-family: 'Roboto', sans-serif;
     color: var(--title-text-color);
     background: var(--team-background-color);} 
 
+/* section container */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* peculiarities */
-.peculiarities, .caption{visibility: hidden;}
+.peculiarities, .caption{visibility: hidden; margin: 0; }
 .section-items .title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14; 
     letter-spacing: 0.03em;
+    margin: 0 0 10px;
+   
     color:var(--title-text-color);}
 .section-items .text{
+    width: 270px;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    margin: 0;}
 
 /* work */
 .section-headline{
@@ -96,6 +148,9 @@ body{font-family: 'Roboto', sans-serif;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 50px;
     color:var(--title-text-color);}
 
 /* team */
@@ -105,18 +160,28 @@ body{font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--title-text-color);}
+    .team-items .text{text-align: center;}
     /* team & projects text */
 .team-items .text, .projects .text {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
-
+.team-item{
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;}
+.team-items, .section-items{display: flex;
+    gap: 30px;}
 /* footer */
-.page-footer{background: var(--content-background-color);}
+.page-footer{background: var(--content-background-color);
+    padding: 60px 0;}
 .footer-studio{color: var(--hero-headline-color);}
-
+.footer-contacts{ margin-top: 20px;}
 .footer-contact.address{
     color: var(--hero-headline-color);} 
 .footer-contact{
@@ -125,6 +190,7 @@ body{font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
+    
     color: var(--footer-contact);}
 .footer-contact:hover,
 .footer-contact:focus {color: var(--acent-color);}
@@ -132,9 +198,14 @@ body{font-family: 'Roboto', sans-serif;
 /* portfolio */
 
 /* buttons */
+.items-buttons{display: flex;
+    justify-content: center;}
+.items-buttons .item:not(:last-child){margin-right: 8px;}
 .items-buttons .button{
     font-weight: 500;
     font-size: 16px;
+    min-width: 73px;
+    padding: 6px 22px;
     line-height: 1.6;
     letter-spacing: 0.03em;}
 .button.secondary {
@@ -143,7 +214,9 @@ body{font-family: 'Roboto', sans-serif;
 .button.secondary:hover,
 .button.secondary:focus{
     background: var(--acent-color);
-    color: var(--hero-headline-color);}
+    color: var(--hero-headline-color);
+    padding: 6px 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)}
 
 /* projects */
 .projects .title{
@@ -151,5 +224,19 @@ body{font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    padding: 20px 24px 4px;
     color: var(--title-text-color);}
+.projects .text{
+    padding: 0px 24px 20px;
+    
+}
+.project{
+    width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;} 
+.projects.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 34px;}
 
