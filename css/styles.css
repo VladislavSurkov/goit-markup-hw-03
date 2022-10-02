@@ -162,7 +162,7 @@ body{font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);}
-    .team-items .text{text-align: center;}
+.team-items .text{text-align: center;}
     /* team & projects text */
 .team-items .text, .projects .text {
     font-size: 16px;
@@ -224,7 +224,7 @@ body{font-family: 'Roboto', sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)}
 
 /* projects */
-.projects .title{
+.project .title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -232,13 +232,13 @@ body{font-family: 'Roboto', sans-serif;
     padding: 20px 24px 4px;
     margin: 0;
     color: var(--title-text-color);}
-.projects .text{
+.project .text{
     padding: 0px 24px 20px;
     margin: 0;
     
 }
 .project{
-    width: 370px;
+    width:calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
     background: #FFFFFF;
