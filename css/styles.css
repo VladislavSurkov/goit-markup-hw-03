@@ -198,9 +198,9 @@ body{font-family: 'Roboto', sans-serif;
     padding: 60px 0;}
 .footer-studio{color: var(--hero-headline-color);}
 .footer-contacts{ margin-top: 20px;}
-.footer-contact.address{
+.footer-address.address{
     color: var(--hero-headline-color);} 
-.footer-contact{
+.footer-contact, .footer-address{
     font-style: normal; 
     font-size: 14px;
     line-height: 1.7;
