@@ -86,6 +86,8 @@ body{font-family: 'Roboto', sans-serif;
 
 /* hero content */
 .hero-content{ background: var(--content-background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 200px 0px 200px ;
     margin: auto;
     text-align: center;}
@@ -108,7 +110,6 @@ body{font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
-   
     margin: auto;
     padding: 10px 34px ;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -158,6 +159,7 @@ body{font-family: 'Roboto', sans-serif;
     margin-top: 0;
     margin-bottom: 50px;
     color:var(--title-text-color);}
+.image{display: block;}
 
 /* team */
 .team{background: var(--team-background-color);}
@@ -256,7 +258,8 @@ body{font-family: 'Roboto', sans-serif;
     margin-right: 30px;
     margin-bottom: 30px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;} 
+    } 
+.project-box{border: 1px solid #EEEEEE;}
 .project:nth-child(3n){
     margin-right: 0;}
 .project:nth-last-child(-n+3){
