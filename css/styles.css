@@ -112,8 +112,6 @@ body {
 /* hero content */
 .hero-content {
   background: var(--content-background-color);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 200px 0px 200px;
   margin: auto;
   text-align: center;
